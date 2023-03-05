@@ -17,7 +17,7 @@ public class ThreadSapo extends Thread {
 		int distPercorrida = 0;
 		int numSapo = (int) getId();
 		
-		while (distPercorrida < 100) {
+		while (distPercorrida < DIST_MAX) {
 			try {
 				sleep((int) (Math.random() * 1001));
 			} catch (InterruptedException e) {
